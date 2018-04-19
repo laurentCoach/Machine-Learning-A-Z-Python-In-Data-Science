@@ -11,6 +11,7 @@ X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, 3].values
 
 # Taking care of missing data
+# Replace missing data by mean
 from sklearn.preprocessing import Imputer
 imputer = Imputer(missing_values = 'NaN', strategy = 'mean', axis = 0)
 imputer = imputer.fit(X[:, 1:3])
