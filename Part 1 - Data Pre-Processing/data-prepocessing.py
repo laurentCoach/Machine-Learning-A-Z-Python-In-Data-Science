@@ -43,7 +43,7 @@ from sklearn.cross_validation import train_test_split
 #divise les données entre 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 
-#features scaling -->centrades données
+#features scaling -->centrées les données
 from sklearn.preprocessing import StandardScaler
 sc_X = StandardScaler()
 X_train = sc_X.fit_transform(X_train)
